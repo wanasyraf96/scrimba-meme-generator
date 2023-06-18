@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { Meme } from '../Types'
 
 const Meme = () => {
-	const [meme, setMeme] = useState({
-		id: 0,
+	const [meme, setMeme] = useState<Meme>({
+		id: '',
 		name: '',
 		url: '',
 		width: 0,
 		height: 0,
 		box_count: 0,
 	})
-	const [data, setData] = useState([])
+	const [data, setData] = useState<Array<Meme>>([])
 
 	useEffect(() => {
 		const getData = async () => {
