@@ -40,7 +40,7 @@ const Meme = () => {
 		return (
 			<div className="meme">
 				<p>{meme.name}</p>
-				<img src={meme.url} width={meme.width} height={meme.height} />
+				<img src={meme.url} className='meme--image' />
 			</div>
 		)
 	}
